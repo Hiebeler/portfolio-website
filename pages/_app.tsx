@@ -3,6 +3,7 @@ import 'tailwindcss/tailwind.css'
 import LandingPage from '../components/landingPage'
 import AboutMe from '../components/aboutMe'
 import Head from 'next/head'
+import Projects from '../components/projects'
 
 function MyApp() {
   return <div>
@@ -12,6 +13,7 @@ function MyApp() {
     </Head>
     <LandingPage />
     <AboutMe />
+    <Projects />
   </div>
 }
 
