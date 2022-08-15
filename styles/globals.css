@@ -8,3 +8,17 @@
   font-weight: 400;
   src: local(''), url('../assets/fonts/Dosis-Regular.ttf');
 }
+
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''), url('../assets/fonts/Dosis-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('../assets/fonts/Dosis-Bold.ttf');
+}

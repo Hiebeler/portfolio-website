@@ -39,20 +39,20 @@ function Projects() {
                 <div ref={(e) => createPanelsRefs(e, 0)} className='w-[70vw]'>
                     <h2 className='text-primary text-6xl font-dosis'>Projects:</h2>
                     <div className='pt-[80px]'>
-                        <ProjectCard title={"debt-manager"} />
+                        <ProjectCard title={"Mind Yoga"} color={"#33adcb"} imageName={"mind-yoga.png"} />
                     </div>
                 </div>
                 <div ref={(e) => createPanelsRefs(e, 1)} className='w-[70vw] pt-[140px]'>
-                    <ProjectCard title={"debt-manager"} />
+                    <ProjectCard title={"debt-manager"} color={"#8879b8"} />
                 </div>
                 <div ref={(e) => createPanelsRefs(e, 2)} className='w-[70vw] pt-[140px]'>
-                    <ProjectCard title={"debt-manager"} />
+                    <ProjectCard title={"debt-manager"} color={"#aaaaaa"} />
                 </div>
                 <div ref={(e) => createPanelsRefs(e, 3)} className='w-[70vw] pt-[140px]'>
-                    <ProjectCard title={"debt-manager"} />
+                    <ProjectCard title={"debt-manager"} color={"#aaaaaa"} />
                 </div>
                 <div ref={(e) => createPanelsRefs(e, 4)} className='w-[70vw] pt-[140px]'>
-                    <ProjectCard title={"debt-manager"} />
+                    <ProjectCard title={"debt-manager"} color={"#aaaaaa"} />
                 </div>
             </div>
         </div>
