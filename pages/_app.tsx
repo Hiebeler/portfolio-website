@@ -8,7 +8,7 @@ import Projects from '../components/projects'
 function MyApp() {
   return <div>
     <Head>
-      <title>Next App</title>
+      <title>Emanuel Hiebeler</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <LandingPage />

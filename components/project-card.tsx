@@ -1,6 +1,6 @@
 import 'tailwindcss/tailwind.css'
 
-function projectCard(props: any) {
+function ProjectCard(props: any) {
     const title: String = props["title"];
     const color = props["color"];
     return <div className="w-full h-[70vh] px-10">
@@ -10,4 +10,4 @@ function projectCard(props: any) {
     </div>
 }
 
-export default projectCard;
+export default ProjectCard;
