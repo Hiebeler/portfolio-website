@@ -6,7 +6,7 @@ import Head from 'next/head'
 import Projects from '../components/projects'
 
 function MyApp() {
-  return <div className='overflow-x-hidden'>
+  return <div className='overflow-x-hidden bg-light_background'>
     <Head>
       <title>Emanuel Hiebeler</title>
       <link rel="icon" href="/favicon.ico" />
@@ -14,7 +14,7 @@ function MyApp() {
     <LandingPage />
     <AboutMe />
     <Projects />
-    <div className='h-screen bg-dark_background relative'>
+    <div className='h-screen bg-dark_background relative mt-[200vh]'>
       <h2 className='text-primary text-6xl font-dosis'>Contact Me:</h2>
     </div>
   </div>
