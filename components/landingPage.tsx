@@ -7,7 +7,7 @@ function LandingPage() {
         <div className='h-5/6 relative'>
             <div className='flex flex-row flex-wrap h-full sm:p-20 p-10'>
                 <div className='w-full md:basis-1/2 items-center justify-center relative'>
-                    <div className='hidden md:block ' >
+                    <div className='hidden md:block'>
                         <Image src="/images/programmingImage.webp" alt="software Engineer Illustration" layout='fill' objectFit='contain' />
                     </div>
                     <div className='block md:hidden items-center justify-center' >
