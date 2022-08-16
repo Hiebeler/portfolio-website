@@ -19,22 +19,22 @@ function Projects() {
     useEffect(() => {
         const totalPanels = panels.current.length;
         gsap.to(panels.current, {
-            xPercent: -100 * (totalPanels - 1),
+            xPercent: -100 * (totalPanels - 1) - 100,
             ease: "none",
             scrollTrigger: {
                 trigger: panelsContainer.current,
                 pin: true,
-                scrub: 1,
-                snap: 1 / (totalPanels - 1),
+                scrub: 0.1,
+                //snap: 1 / (totalPanels - 1),
                 // base vertical scrolling on how wide the container is so it feels more natural.
                 end: () => "+=" + panelsContainer.current.offsetWidth
             }
         });
     }, []);
 
-    return <div className='h-[500vh] bg-light_background'>
+    return <div className='h-[350vw] flex flex-nowrap overflow-y-scroll overflow-x-hidden bg-light_background'>
         <div className='lg:pt-20 lg:pl-20 lg:pr-20 pt-10 pl-10 pr-10'>
-            <div ref={panelsContainer} className='flex flex-nowrap h-[350vh] w-[350vw] relative'>
+            <div ref={panelsContainer} className='flex flex-nowrap h-[350vw] w-[350vw] relative'>
                 <div ref={(e) => createPanelsRefs(e, 0)} className='w-[70vw]'>
                     <h2 className='text-primary text-6xl font-dosis'>Projects:</h2>
                     <div className='pt-[80px]'>

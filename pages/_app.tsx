@@ -14,8 +14,8 @@ function MyApp() {
     <LandingPage />
     <AboutMe />
     <Projects />
-    <div className='h-screen bg-primary'>
-      halo
+    <div className='h-screen bg-dark_background relative'>
+      <h2 className='text-primary text-6xl font-dosis'>Contact Me:</h2>
     </div>
   </div>
 }
