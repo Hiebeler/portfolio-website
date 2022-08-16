@@ -24,7 +24,7 @@ function Projects() {
             scrollTrigger: {
                 trigger: panelsContainer.current,
                 pin: true,
-                scrub: 0.1,
+                scrub: 1,
                 //snap: 1 / (totalPanels - 1),
                 // base vertical scrolling on how wide the container is so it feels more natural.
                 end: () => "+=" + panelsContainer.current.offsetWidth
@@ -32,26 +32,20 @@ function Projects() {
         });
     }, []);
 
-    return <div className='h-[350vw] flex flex-nowrap overflow-y-scroll overflow-x-hidden bg-light_background'>
+    return <div className='h-[210vw] flex flex-nowrap overflow-y-scroll overflow-x-hidden bg-light_background'>
         <div className='lg:pt-20 lg:pl-20 lg:pr-20 pt-10 pl-10 pr-10'>
-            <div ref={panelsContainer} className='flex flex-nowrap h-[350vw] w-[350vw] relative'>
-                <div ref={(e) => createPanelsRefs(e, 0)} className='w-[70vw]'>
+            <div ref={panelsContainer} className='flex flex-nowrap h-[210vw] w-[210vw] relative'>
+                <div ref={(e) => createPanelsRefs(e, 0)} className='w-[70vw] 2xl:w-[50vw]'>
                     <h2 className='text-primary text-6xl font-dosis'>Projects:</h2>
                     <div className='pt-[80px]'>
-                        <ProjectCard title={"Mind Yoga"} color={"#33adcb"} imageName={"mind-yoga.png"} />
+                        <ProjectCard title={"Mind Yoga"} color="#33adcb" headerColor={"#FFDC7C"} folderName={"mind-yoga"} app={true} />
                     </div>
                 </div>
-                <div ref={(e) => createPanelsRefs(e, 1)} className='w-[70vw] pt-[140px]'>
-                    <ProjectCard title={"debt-manager"} color={"#8879b8"} />
+                <div ref={(e) => createPanelsRefs(e, 1)} className='w-[70vw] 2xl:w-[50vw] pt-[140px]'>
+                    <ProjectCard title={"debt-manager"} color={"#8879b8"} headerColor={"#8879b8"} folderName={"debt-manager"} app={true} />
                 </div>
-                <div ref={(e) => createPanelsRefs(e, 2)} className='w-[70vw] pt-[140px]'>
-                    <ProjectCard title={"debt-manager"} color={"#aaaaaa"} />
-                </div>
-                <div ref={(e) => createPanelsRefs(e, 3)} className='w-[70vw] pt-[140px]'>
-                    <ProjectCard title={"debt-manager"} color={"#aaaaaa"} />
-                </div>
-                <div ref={(e) => createPanelsRefs(e, 4)} className='w-[70vw] pt-[140px]'>
-                    <ProjectCard title={"debt-manager"} color={"#aaaaaa"} />
+                <div ref={(e) => createPanelsRefs(e, 2)} className='w-[70vw] 2xl:w-[50vw] pt-[140px]'>
+                    <ProjectCard title={"Ferienhaus Website"} color={"#cee002"} headerColor={"#cee002"} folderName={"ferienhaus"} app={false} />
                 </div>
             </div>
         </div>
