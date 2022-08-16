@@ -32,9 +32,9 @@ function Projects() {
         });
     }, []);
 
-    return <div className='h-[210vw] flex flex-nowrap overflow-y-scroll overflow-x-hidden bg-light_background w-[210vw] relative' ref={panelsContainer}>
-        <div className='lg:pt-20 lg:pl-20 lg:pr-20 pt-10 pl-10 pr-10'>
-            <div className='flex flex-nowrap overflow-y-scroll overflow-x-hidden relative'>
+    return <div className='h-[210vw] flex flex-nowrap overflow-y-scroll overflow-x-hidden bg-light_background'>
+        <div className=''>
+            <div ref={panelsContainer} className='flex flex-nowrap h-[210vw] w-[210vw] relative'>
                 <div ref={(e) => createPanelsRefs(e, 0)} className='w-[70vw] 2xl:w-[50vw]'>
                     <h2 className='text-primary text-6xl font-dosis'>Projects:</h2>
                     <div className='pt-[80px]'>
