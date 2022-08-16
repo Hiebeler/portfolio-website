@@ -6,7 +6,7 @@ import Head from 'next/head'
 import Projects from '../components/projects'
 
 function MyApp() {
-  return <div>
+  return <div className='overflow-x-hidden'>
     <Head>
       <title>Emanuel Hiebeler</title>
       <link rel="icon" href="/favicon.ico" />
@@ -14,6 +14,9 @@ function MyApp() {
     <LandingPage />
     <AboutMe />
     <Projects />
+    <div className='h-screen bg-primary'>
+      halo
+    </div>
   </div>
 }
 
