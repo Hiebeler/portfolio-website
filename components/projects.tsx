@@ -34,7 +34,7 @@ function Projects() {
 
     return <div className='h-[500vh] bg-light_background'>
         <div className='lg:pt-20 lg:pl-20 lg:pr-20 pt-10 pl-10 pr-10'>
-            <div ref={panelsContainer} className='flex flex-nowrap w-[500vw] relative'>
+            <div ref={panelsContainer} className='flex flex-nowrap h-[350vh] w-[350vw] relative'>
                 <div ref={(e) => createPanelsRefs(e, 0)} className='w-[70vw]'>
                     <h2 className='text-primary text-6xl font-dosis'>Projects:</h2>
                     <div className='pt-[80px]'>
