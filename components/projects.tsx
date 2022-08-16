@@ -32,7 +32,7 @@ function Projects() {
         });
     }, []);
 
-    return <div className='h-[210vw] flex flex-nowrap overflow-y-scroll overflow-x-hidden bg-light_background'>
+    return <div className='h-[210vw] flex flex-nowrap overflow-x-hidden bg-light_background'>
         <div className=''>
             <div ref={panelsContainer} className='flex flex-nowrap h-[210vw] w-[210vw] relative p-20'>
                 <div ref={(e) => createPanelsRefs(e, 0)} className='w-[70vw] 2xl:w-[50vw]'>
