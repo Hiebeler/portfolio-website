@@ -10,6 +10,7 @@ module.exports = {
         'lgOrTall': { 'raw': '(max-height: 800px) and (max-width: 1024px' },
         // => @media (min-height: 800px) { ... }
         '2xlAndTall': { 'min': '1736px' },
+        '2xl': '1736px',
       }
     },
     fontFamily: {

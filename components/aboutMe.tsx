@@ -18,20 +18,34 @@ function aboutMe() {
 
                 </div>
 
-                <div className='flex-col hidden lg:flex basis-1/3'>
-                    <div className='basis-full relative rotate-[5deg]'>
+                <div className='flex-row hidden lg:flex basis-1/3 justify-end'>
+                    <div className='basis-full relative rotate-[5deg] max-w-lg'>
                         <Image src="/images/about-me/29er.webp" alt="Sailing Image" layout='fill' objectFit='contain' />
                     </div>
                 </div>
             </div>
-            <div className='flex-row hidden lg:flex pl-20 pb-20 pr-20 basis-2/3 xl:gap-x-40 gap-x-20'>
-                <div className='basis-1/2 relative rotate-[-2deg]'>
+            <div className='flex-row hidden lg:flex pl-20 pb-20 pr-20 basis-2/3 lg:justify-between xl:gap-x-40 gap-x-20'>
+                <div className='basis-1/2 relative rotate-[-2deg] max-w-lg'>
                     <Image src="/images/about-me/29er.webp" alt="Sailing Image" layout='fill' objectFit='contain' />
                 </div>
-                <div className='basis-1/2 relative rotate-[4deg]'>
+                <div className='basis-1/2 relative rotate-[4deg]  max-w-lg'>
                     <Image src="/images/about-me/29er.webp" alt="Sailing Image" layout='fill' objectFit='contain' />
                 </div>
-                <div className='basis-1/2 relative rotate-[-3deg]'>
+                <div className='basis-1/2 relative rotate-[-3deg] max-w-lg'>
+                    <Image src="/images/about-me/29er.webp" alt="Sailing Image" layout='fill' objectFit='contain' />
+                </div>
+            </div>
+            <div className='flex-row flex-wrap lg:hidden flex pl-20 pb-20 pr-20 basis-2/3 gap-y-5'>
+                <div className='basis-1/2 relative rotate-[-2deg] max-w-lg'>
+                    <Image src="/images/about-me/29er.webp" alt="Sailing Image" layout='fill' objectFit='contain' />
+                </div>
+                <div className='basis-1/2 relative rotate-[4deg]  max-w-lg'>
+                    <Image src="/images/about-me/29er.webp" alt="Sailing Image" layout='fill' objectFit='contain' />
+                </div>
+                <div className='basis-1/2 relative rotate-[-3deg] max-w-lg'>
+                    <Image src="/images/about-me/29er.webp" alt="Sailing Image" layout='fill' objectFit='contain' />
+                </div>
+                <div className='basis-1/2 relative rotate-[-3deg] max-w-lg'>
                     <Image src="/images/about-me/29er.webp" alt="Sailing Image" layout='fill' objectFit='contain' />
                 </div>
             </div>

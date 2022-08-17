@@ -15,7 +15,7 @@ function ProjectCard(props: any) {
                     <div className='relative min-h-[100px] h-[200px] w-[200px]'>
                         <Image src={"/images/projects/" + folderName + "/logo.png"} alt="logo" layout='fill' objectFit='contain' />
                     </div>
-                    <h3 className='text-6xl font-dosis font-bold' style={{ color: `${headerColor}` }}>{title}</h3>
+                    <h3 className='text-4xl 2xl:text-6xl font-dosis font-bold' style={{ color: `${headerColor}` }}>{title}</h3>
                     <p className='text-xl lg:text-2xl text-secondary font-dosis pt-5'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum

@@ -8,7 +8,7 @@ function LandingPage() {
             <div className='flex flex-row flex-wrap h-full sm:p-20 p-10'>
                 <div className='w-full md:basis-1/2 items-center justify-center relative'>
                     <div className='hidden md:block'>
-                        <Image src="/images/programmingImage.webp" alt="software Engineer Illustration" layout='fill' objectFit='contain' />
+                        <Image src="/images/programmingImage.webp" alt="software Engineer Illustration" layout='fill' objectFit='contain' quality={100} />
                     </div>
                     <div className='block md:hidden items-center justify-center' >
                         <Image src="/images/avatar.png" alt="Avatar" layout='fill' objectFit='contain' className='hidden md:block' />
