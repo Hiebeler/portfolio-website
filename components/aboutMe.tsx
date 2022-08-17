@@ -20,7 +20,7 @@ function aboutMe() {
 
                 <div className='flex-row hidden lg:flex basis-1/3 justify-end'>
                     <div className='basis-full relative rotate-[5deg] max-w-2xl'>
-                        <Image src="/images/about-me/29er.webp" alt="Sailing Image" layout='fill' objectFit='contain' />
+                        <Image src="/images/about-me/eurosafEm.webp" alt="Sailing Image" layout='fill' objectFit='contain' />
                     </div>
                 </div>
             </div>
