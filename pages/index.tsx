@@ -10,7 +10,7 @@ function Home() {
         <Head>
             <title>Emanuel Hiebeler</title>
             <link rel="icon" href="/favicon.ico" />
-            <meta name="description" content="I am Emanue Hiebeler, a sailor and programmer. I am interested in programming especially in web and app development." />
+            <meta name="description" content="I am Emanue Hiebeler, a sailor and programmer. I'm especially interested in web and app development." />
         </Head>
         <LandingPage />
         <AboutMe />
