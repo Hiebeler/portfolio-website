@@ -45,7 +45,7 @@ function Projects() {
                     <ProjectCard title={"debt-manager"} color={"#8879b8"} headerColor={"#8879b8"} folderName={"debt-manager"} app={true} technologies={["flutter", "firebase"]} text="Debt-Manager is an simple manager for your debts, but it gives you also some special features like adding debts which your friends also see." />
                 </div>
                 <div ref={(e) => createPanelsRefs(e, 2)} className='w-[90vw] lg:w-[70vw] 2xl:w-[50vw] pt-[140px]'>
-                    <a target="_blank" href="https://ferienhaus-lustenau.at">
+                    <a target="_blank" rel="noreferrer" href="https://ferienhaus-lustenau.at">
                         <ProjectCard title={"Ferienhaus Website"} color={"#cee002"} headerColor={"#cee002"} folderName={"ferienhaus"} app={false} technologies={["html", "js", "sass"]} text="I developed a simple website for our holiday house where you can get all the information for it." /></a>
                 </div>
             </div>

@@ -10,10 +10,10 @@ function aboutMe() {
                     <p className='mt-5 font-dosis text-xl text-secondary max-w-5xl'>Hallo, I'm Emanuel Hiebeler and i am 17 years old and from Austria. I am interested in Programming, espessially in web and app development.</p>
                     <h4 className='text-primary text-4xl font-dosis pt-16'>Follow Me:</h4>
                     <div className='pt-2 flex-row flex gap-x-5'>
-                        <a target="_blank" href="https://github.com/Hiebeler">
+                        <a target="_blank" href="https://github.com/Hiebeler" rel="noreferrer">
                             <Image src="/icons/github.svg" alt="Github" width={"50px"} height="50px" objectFit='contain' />
                         </a>
-                        <a target="_blank" href="https://www.instagram.com/hiebeler05/">
+                        <a target="_blank" href="https://www.instagram.com/hiebeler05/" rel="noreferrer">
                             <Image src="/icons/instagram.svg" alt="Instagram" width={"50px"} height="50px" objectFit='contain' />
                         </a>
                         <button onClick={
