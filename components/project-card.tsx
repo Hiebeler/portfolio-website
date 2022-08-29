@@ -13,7 +13,15 @@ function ProjectCard(props: any) {
             <div className='flex flex-row h-full'>
                 <div className='basis-2/3 lg:basis-1/2 flex flex-col xl:px-10'>
                     <div className='relative min-h-[100px] h-[200px] w-[200px]'>
-                        <Image src={"/images/projects/" + folderName + "/logo.png"} alt="logo" layout='fill' objectFit='contain' />
+                        {(() => {
+
+
+                            return <>
+                                <Image src={"/images/projects/" + folderName + "/logo.png"} alt="" layout='fill' objectFit='contain' />
+                            </>
+
+                        })()}
+
                     </div>
                     <h3 className='text-4xl 2xl:text-6xl font-dosis font-bold' style={{ color: `${headerColor}` }}>{title}</h3>
                     <p className='text-xl lg:text-2xl text-secondary font-dosis pt-5'>
@@ -58,5 +66,14 @@ function ProjectCard(props: any) {
         </div>
     </div>
 }
+
+const tryRequire = (path: any) => {
+    try {
+        require(`${path}`);
+        return true;
+    } catch (err) {
+        return false;
+    }
+};
 
 export default ProjectCard;
