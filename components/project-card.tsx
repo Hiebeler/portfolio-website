@@ -9,15 +9,16 @@ function ProjectCard(props: any) {
     const folderName = props["folderName"];
     const explanation: string = props["text"];
     const technologies: string[] = props["technologies"];
+    const link: string = props["link"];
 
-    return <div className="w-full h-[70vh] px-10">
+    return <div className="w-full h-[70vh] px-5 sm:px-10">
         <div className={"h-full p-10 rounded shadow-xl"} style={{ backgroundColor: `${color + "55"}` }}>
             <div className='flex flex-row h-full'>
-                <div className='basis-2/3 lg:basis-1/2 flex flex-col xl:px-10'>
-                    <div className='relative min-h-[100px] h-[200px] w-[200px]'>
-
-                        <Image src={"/images/projects/" + folderName + "/logo.png"} alt="" layout='fill' objectFit='contain' />
-
+                <div className='basis-full sm:basis-2/3 lg:basis-1/2 flex flex-col xl:px-10'>
+                    <div className='relative min-h-[100px] h-[150px] w-[150px] sm:h-[200px] sm:w-[200px]'>
+                        <a target="_blank" rel="noreferrer" href={link}>
+                            <Image src={"/images/projects/" + folderName + "/logo.png"} alt="" layout='fill' objectFit='contain' />
+                        </a>
 
                     </div>
                     <h3 className='text-4xl 2xl:text-6xl font-dosis font-bold' style={{ color: `${headerColor}` }}>{title}</h3>
@@ -28,7 +29,21 @@ function ProjectCard(props: any) {
                     </h4>
                     <div className='flex-row'>
                         {technologies.map(function (technology: string, index: number) {
-                            return (<Image key={index.toString()} src={"/icons/technologies/" + technology + ".svg"} alt="" width="60px" height="60px" objectFit='contain' className='object-left' />)
+                            var technologyLink: string = "";
+                            switch (technology) {
+                                case "flutter":
+                                    technologyLink = "https://flutter.dev/";
+                                    break;
+                                case "firebase":
+                                    technologyLink = "https://firebase.google.com/";
+                                    break;
+                                case "sass":
+                                    technologyLink = "https://sass-lang.com/";
+                                    break;
+                                default:
+                                    return (<Image key={index.toString()} src={"/icons/technologies/" + technology + ".svg"} alt="" width="60px" height="60px" objectFit='contain' className='object-left' />);
+                            }
+                            return (<a target="_blank" rel="noreferrer" href={technologyLink} key={index.toString()}><Image src={"/icons/technologies/" + technology + ".svg"} alt="" width="60px" height="60px" objectFit='contain' className='object-left' /></a>)
                         })}
 
 
@@ -37,7 +52,7 @@ function ProjectCard(props: any) {
                 {(() => {
                     if (app) {
                         return <>
-                            <div className='basis-1/3 lg:basis-1/2 flex flex-row gap-x-5'>
+                            <div className='hidden sm:flex basis-1/3 lg:basis-1/2 flex-row gap-x-5'>
                                 <div className='basis-full lg:basis-1/2 flex flex-col relative gap-y-5'>
                                     <div className='basis-1/2 relative'>
                                         <Image src={"/images/projects/" + folderName + "/1.webp"} alt="picture of game" layout='fill' objectFit='contain' />
@@ -56,7 +71,7 @@ function ProjectCard(props: any) {
                                 </div>
                             </div></>
                     }
-                    return <><div className='basis-1/3 lg:basis-1/2 relative flex flex-col gap-y-5'>
+                    return <><div className='hidden sm:flex basis-1/3 lg:basis-1/2 relative flex-col gap-y-5'>
                         <div className='basis-1/2 relative'>
                             <Image src={"/images/projects/" + folderName + "/1.png"} alt="picture of game" layout='fill' objectFit='contain' />
                         </div>
