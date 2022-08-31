@@ -19,15 +19,14 @@ function ProjectCard(props: any) {
                         <a target="_blank" rel="noreferrer" href={link}>
                             <Image src={"/images/projects/" + folderName + "/logo.png"} alt="" layout='fill' objectFit='contain' />
                         </a>
-
                     </div>
                     <h3 className='text-4xl 2xl:text-6xl font-dosis font-bold' style={{ color: `${headerColor}` }}>{title}</h3>
                     <p className='text-xl lg:text-2xl text-secondary font-dosis pt-5'>{explanation}
                     </p>
-                    <h4 className='text-4xl 2xl:text-4xl font-dosis font-bold pt-10' style={{ color: `${headerColor}` }}>
+                    <h4 className='text-4xl 2xl:text-4xl font-dosis font-bold pt-10 hidden xsm:block' style={{ color: `${headerColor}` }}>
                         Technology:
                     </h4>
-                    <div className='flex-row'>
+                    <div className='flex-row hidden xsm:block'>
                         {technologies.map(function (technology: string, index: number) {
                             var technologyLink: string = "";
                             switch (technology) {
@@ -45,10 +44,16 @@ function ProjectCard(props: any) {
                             }
                             return (<a target="_blank" rel="noreferrer" href={technologyLink} key={index.toString()}><Image src={"/icons/technologies/" + technology + ".svg"} alt="" width="60px" height="60px" objectFit='contain' className='object-left' /></a>)
                         })}
-
-
+                    </div>
+                    <div>
+                        {(() => {
+                            if (link != undefined) {
+                                return (<a href={link}><p className='text-xl lg:text-2xl text-secondary font-dosis pt-5'>Visit Me {'\u2192'}</p></a>);
+                            }
+                        })()}
                     </div>
                 </div>
+
                 {(() => {
                     if (app) {
                         return <>
@@ -82,7 +87,7 @@ function ProjectCard(props: any) {
                 })()}
             </div>
         </div>
-    </div>
+    </div >
 }
 
 const tryRequire = (path: any) => {
