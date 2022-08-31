@@ -34,7 +34,7 @@ function Projects() {
 
     return <div className='h-[400vw] md:h-[270vw] lg:h-[210vw] 2xl:h-[150vw] flex flex-nowrap overflow-y-hidden overflow-x-hidden bg-light_background'>
         <div className=''>
-            <div ref={panelsContainer} className='flex flex-nowrap h-[400vw] md:h-[270vw] lg:h-[210vw] 2xl:h-[150vw] w-[270vw] lg:w-[210vw] 2xl:w-[150vw] relative p-10 sm:p-20'>
+            <div ref={panelsContainer} className='flex flex-nowrap h-[400vw] md:h-[270vw] lg:h-[210vw] 2xl:h-[150vw] w-[400vw] md:w-[270vw] lg:w-[210vw] 2xl:w-[150vw] relative p-10 sm:p-20'>
                 <div ref={(e) => createPanelsRefs(e, 0)} className='w-[100vw] sm:w-[90vw] lg:w-[70vw] 2xl:w-[50vw]'>
                     <h2 className='text-primary text-6xl font-dosis'>Projects:</h2>
                     <div className='pt-[40px] sm:pt-[80px]'>
