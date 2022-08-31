@@ -7,7 +7,7 @@ import ContactMe from '../components/contactMe'
 
 function Home() {
 
-    return <div className='overflow-x-hidden'>
+    return <div className='overflow-x-hidden scrollbar scrollbar-thumb-green-900 scrollbar-track-gray-100'>
         <Head>
             <title>Emanuel Hiebeler</title>
             <link rel="icon" href="/favicon.ico" />
