@@ -23,10 +23,10 @@ function ProjectCard(props: any) {
                     <h3 className='text-4xl 2xl:text-6xl font-dosis font-bold' style={{ color: `${headerColor}` }}>{title}</h3>
                     <p className='text-xl lg:text-2xl text-secondary font-dosis pt-5'>{explanation}
                     </p>
-                    <h4 className='text-4xl 2xl:text-4xl font-dosis font-bold pt-10 hidden xsm:block' style={{ color: `${headerColor}` }}>
+                    <h4 className='text-4xl 2xl:text-4xl font-dosis font-bold pt-10 hidden smHeight:hidden xsm:block' style={{ color: `${headerColor}` }}>
                         Technology:
                     </h4>
-                    <div className='flex-row hidden xsm:block'>
+                    <div className='flex-row hidden smHeight:hidden xsm:block'>
                         {technologies.map(function (technology: string, index: number) {
                             var technologyLink: string = "";
                             switch (technology) {
