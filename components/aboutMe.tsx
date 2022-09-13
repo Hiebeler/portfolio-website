@@ -29,7 +29,7 @@ function AboutMe() {
             <div className='flex-col flex lg:basis-2/3 basis-full'>
                 <div className='basis-2/3 pt-20 pb-20'>
                     <h2 className='text-primary text-6xl font-dosis'>About me:</h2>
-                    <p className='mt-5 font-dosis text-xl text-secondary max-w-5xl'>Hallo, I'm Emanuel Hiebeler and i am 17 years old and from Austria. I am interested in Programming, espessially in web and app development.</p>
+                    <p className='mt-5 font-dosis text-xl text-secondary max-w-5xl'>Hello, I'm Emanuel Hiebeler and I am 17 years old and from Austria. I am interested in programming, espessially in web and app development.</p>
                     <h4 className='text-primary text-4xl font-dosis pt-16'>Follow Me:</h4>
                     <div className='pt-2 flex-row flex gap-x-5'>
                         <a target="_blank" href="https://github.com/Hiebeler" rel="noreferrer">
