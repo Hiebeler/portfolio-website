@@ -99,7 +99,7 @@ export default function Home() {
               <span className="text-secondary">&gt;</span>
               <span className="">{name}</span>
               <span className="text-secondary">&lt;/</span>
-              <span className="text-primary">age</span>
+              <span className="text-primary">name</span>
               <span className="text-secondary">&gt;</span>
             </p>
             <p>
