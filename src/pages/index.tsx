@@ -14,34 +14,64 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const randomChars =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  const [instagramName, setInstagramName] = useState<string>("@hiebeler05");
   const instagramNameFinished = "@hiebeler05";
-  const [githubName, setGithubName] = useState<string>("Hiebeler");
+  const [instagramName, setInstagramName] = useState<string>(
+    instagramNameFinished
+  );
   const githubNameFinished = "Hiebeler";
+  const [githubName, setGithubName] = useState<string>(githubNameFinished);
+  const nameFinished = "Emanuel Hiebeler";
+  const [name, setName] = useState<string>(nameFinished);
+  let AgeFinished = "";
+  const [age, setAge] = useState<string>("");
+  const emailFinished = "emanuel.hiebeler@gmail.com";
+  const [email, setEmail] = useState<string>(emailFinished);
+  const residenceFinished = "Lustenau, Austria";
+  const [residence, setResidence] = useState<string>(residenceFinished);
 
-  function randomTextAnimation(name:string, setter:Function, finished:string) {
+  useEffect(() => {
+    AgeFinished = getAge().toString() + " years";
+    setAge(AgeFinished);
+    console.log(age);
+    randomTextAnimation(nameFinished, setName);
+    randomTextAnimation(AgeFinished, setAge);
+    randomTextAnimation(emailFinished, setEmail);
+    randomTextAnimation(residenceFinished, setResidence);
+    randomTextAnimation(instagramNameFinished, setInstagramName);
+    randomTextAnimation(githubNameFinished, setGithubName);
+  }, []);
+
+
+  function randomTextAnimation(
+    name: string,
+    setter: Function,
+  ) {
     let iterations: number = 0;
 
     const interval = setInterval(() => {
-      name = name
+      let localName = name;
+      localName = localName
         .split("")
         .map((char, index) => {
           if (index < iterations) {
-            return finished[index];
+            return name[index];
+          }
+          if (char === " ") {
+            return " ";
           }
           return randomChars[Math.floor(Math.random() * randomChars.length)];
         })
         .join("");
 
-      setter(name);
+      setter(localName);
 
-      if (iterations >= instagramNameFinished.length) {
+      if (iterations >= name.length) {
         clearInterval(interval);
         return;
       }
 
-      iterations += 1 / 3;
-    }, 25);
+      iterations += 1 / 4;
+    }, 30);
   }
 
   function getAge() {
@@ -67,7 +97,7 @@ export default function Home() {
               <span className="text-secondary">&lt;</span>
               <span className="text-primary">name</span>
               <span className="text-secondary">&gt;</span>
-              <span className="">Emanuel Hiebeler</span>
+              <span className="">{name}</span>
               <span className="text-secondary">&lt;/</span>
               <span className="text-primary">age</span>
               <span className="text-secondary">&gt;</span>
@@ -76,7 +106,7 @@ export default function Home() {
               <span className="text-secondary">&lt;</span>
               <span className="text-primary">age</span>
               <span className="text-secondary">&gt;</span>
-              <span className="">{getAge()} years</span>
+              <span className="">{age}</span>
               <span className="text-secondary">&lt;/</span>
               <span className="text-primary">age</span>
               <span className="text-secondary">&gt;</span>
@@ -85,7 +115,7 @@ export default function Home() {
               <span className="text-secondary">&lt;</span>
               <span className="text-primary">email</span>
               <span className="text-secondary">&gt;</span>
-              <span className="">emanuel.hiebeler@gmail.com</span>
+              <span className="">{email}</span>
               <span className="text-secondary">&lt;/</span>
               <span className="text-primary">email</span>
               <span className="text-secondary">&gt;</span>
@@ -94,7 +124,7 @@ export default function Home() {
               <span className="text-secondary">&lt;</span>
               <span className="text-primary">residence</span>
               <span className="text-secondary">&gt;</span>
-              <span className="">Lustenau, Austria</span>
+              <span className="">{residence}</span>
               <span className="text-secondary">&lt;/</span>
               <span className="text-primary">residence</span>
               <span className="text-secondary">&gt;</span>
@@ -115,7 +145,12 @@ export default function Home() {
               <a
                 className="hover:cursor-pointer hover:underline"
                 href="https://www.instagram.com/hiebeler05/"
-                onMouseEnter={() => randomTextAnimation(instagramName, setInstagramName, instagramNameFinished)}
+                onMouseEnter={() =>
+                  randomTextAnimation(
+                    instagramNameFinished,
+                    setInstagramName
+                    )
+                }
               >
                 {instagramName}
               </a>
@@ -135,7 +170,12 @@ export default function Home() {
               <a
                 className="hover:cursor-pointer hover:underline"
                 href="https://github.com/Hiebeler/"
-                onMouseEnter={() => randomTextAnimation(githubName, setGithubName, githubNameFinished)}
+                onMouseEnter={() =>
+                  randomTextAnimation(
+                    githubNameFinished,
+                    setGithubName
+                  )
+                }
               >
                 {githubName}
               </a>
