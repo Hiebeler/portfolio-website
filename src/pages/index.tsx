@@ -139,7 +139,7 @@ export default function Home() {
               &nbsp;&nbsp;
               <span className="text-secondary">&lt;</span>
               <span className="text-primary">
-                <InstagramLogo className="inline" size={32} />
+                <InstagramLogo className="inline" />
               </span>
               <span className="text-secondary">&gt;</span>
               <a
@@ -156,7 +156,7 @@ export default function Home() {
               </a>
               <span className="text-secondary">&lt;/</span>
               <span className="text-primary">
-                <InstagramLogo className="inline" size={32} />
+                <InstagramLogo className="inline" />
               </span>
               <span className="text-secondary">&gt;</span>
             </p>
@@ -164,7 +164,7 @@ export default function Home() {
               &nbsp;&nbsp;
               <span className="text-secondary">&lt;</span>
               <span className="text-primary">
-                <GithubLogo className="inline" size={32} />
+                <GithubLogo className="inline" />
               </span>
               <span className="text-secondary">&gt;</span>
               <a
@@ -181,7 +181,7 @@ export default function Home() {
               </a>
               <span className="text-secondary">&lt;/</span>
               <span className="text-primary">
-                <GithubLogo className="inline" size={32} />
+                <GithubLogo className="inline" />
               </span>
               <span className="text-secondary">&gt;</span>
             </p>
