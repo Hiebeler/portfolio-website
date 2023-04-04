@@ -12,7 +12,8 @@ module.exports = {
     extend: {},
     colors: {
       background: "#282c34",
-      primary: "#c577dc"
+      primary: "#ed3f5a",
+      secondary: "#549beb"
     }
   },
   plugins: [],
