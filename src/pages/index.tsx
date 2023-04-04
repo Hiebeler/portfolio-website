@@ -152,8 +152,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="basis-full xl:basis-2/5 xl:mt-0 mt-10 xl:max-h-[100%] max-h-[80%] flex items-center">
-          <div className="w-2/5 lg:w-2/5 xl:w-3/5 h-full relative">
+        <div className="basis-full xl:basis-2/5 xl:mt-0 mt-10 xl:max-h-[100%] max-h-[80%] flex items-center pb-10 md:pb-0">
+          <div className="w-3/5 lg:w-3/5 xl:w-4/5 h-full relative mx-auto ">
             <Image
               className="absolute !top-1/2 -translate-y-1/2 object-contain rounded-lg !h-min max-h-full grayscale rotate-3"
               fill
