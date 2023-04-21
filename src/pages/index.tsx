@@ -41,11 +41,7 @@ export default function Home() {
     randomTextAnimation(githubNameFinished, setGithubName);
   }, []);
 
-
-  function randomTextAnimation(
-    name: string,
-    setter: Function,
-  ) {
+  function randomTextAnimation(name: string, setter: Function) {
     let iterations: number = 0;
 
     const interval = setInterval(() => {
@@ -90,7 +86,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-background h-screen flex flex-wrap-reverse flex-row max-w-screen">
+      <main className="bg-background h-screen flex flex-wrap-reverse flex-row max-w-screen text-[#fff]">
         <div className="basis-full xl:basis-3/5 flex justify-center sm:items-center">
           <div className="text-sm sm:text-xl md:text-3xl max-w-[100vw]">
             <p className="break-normal">
@@ -146,10 +142,7 @@ export default function Home() {
                 className="hover:cursor-pointer hover:underline"
                 href="https://www.instagram.com/hiebeler05/"
                 onMouseEnter={() =>
-                  randomTextAnimation(
-                    instagramNameFinished,
-                    setInstagramName
-                    )
+                  randomTextAnimation(instagramNameFinished, setInstagramName)
                 }
               >
                 {instagramName}
@@ -171,10 +164,7 @@ export default function Home() {
                 className="hover:cursor-pointer hover:underline"
                 href="https://github.com/Hiebeler/"
                 onMouseEnter={() =>
-                  randomTextAnimation(
-                    githubNameFinished,
-                    setGithubName
-                  )
+                  randomTextAnimation(githubNameFinished, setGithubName)
                 }
               >
                 {githubName}
