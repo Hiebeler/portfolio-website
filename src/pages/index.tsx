@@ -23,6 +23,8 @@ export default function Home() {
   const [githubName, setGithubName] = useState<string>(githubNameFinished);
   const pixelfedNameFinished = "@hiebeler05";
   const [pixelfedName, setPixelfedName] = useState<string>(githubNameFinished);
+  const mastodonNameFinished = "@Hiebeler05";
+  const [mastodonName, setMastodonName] = useState<string>(githubNameFinished);
   const nameFinished = "Emanuel Hiebeler";
   const [name, setName] = useState<string>(nameFinished);
   let AgeFinished = "";
@@ -50,6 +52,7 @@ export default function Home() {
     randomTextAnimation(instagramNameFinished, setInstagramName);
     randomTextAnimation(githubNameFinished, setGithubName);
     randomTextAnimation(pixelfedNameFinished, setPixelfedName)
+    randomTextAnimation(mastodonNameFinished, setMastodonName)
     randomTextAnimation(pixelixFinished, setPixelix);
     randomTextAnimation(kommiunitiFinished, setKommiuniti);
   }, []);
@@ -207,6 +210,28 @@ export default function Home() {
               <span className="text-secondary">&lt;/</span>
               <span className="text-primary">
               <Image className="inline" width={18} height={18} src={"/images/pixelfed.svg"} alt="pixelfed" />
+              </span>
+              <span className="text-secondary">&gt;</span>
+            </p>
+            <p>
+              &nbsp;&nbsp;
+              <span className="text-secondary">&lt;</span>
+              <span className="text-primary p-1">
+                <Image className="inline" width={18} height={18} src={"/images/mastodon.svg"} alt="pixelfed" />
+              </span>
+              <span className="text-secondary">&gt;</span>
+              <a
+                className="hover:cursor-pointer hover:underline"
+                href="https://techhub.social/@Hiebeler05"
+                onMouseEnter={() =>
+                  randomTextAnimation(mastodonNameFinished, setMastodonName)
+                }
+              >
+                {mastodonName}
+              </a>
+              <span className="text-secondary">&lt;/</span>
+              <span className="text-primary">
+              <Image className="inline" width={18} height={18} src={"/images/mastodon.svg"} alt="pixelfed" />
               </span>
               <span className="text-secondary">&gt;</span>
             </p>
