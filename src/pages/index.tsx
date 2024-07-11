@@ -21,6 +21,8 @@ export default function Home() {
   );
   const githubNameFinished = "Hiebeler";
   const [githubName, setGithubName] = useState<string>(githubNameFinished);
+  const pixelfedNameFinished = "@hiebeler05";
+  const [pixelfedName, setPixelfedName] = useState<string>(githubNameFinished);
   const nameFinished = "Emanuel Hiebeler";
   const [name, setName] = useState<string>(nameFinished);
   let AgeFinished = "";
@@ -47,6 +49,7 @@ export default function Home() {
     randomTextAnimation(residenceFinished, setResidence);
     randomTextAnimation(instagramNameFinished, setInstagramName);
     randomTextAnimation(githubNameFinished, setGithubName);
+    randomTextAnimation(pixelfedNameFinished, setPixelfedName)
     randomTextAnimation(pixelixFinished, setPixelix);
     randomTextAnimation(kommiunitiFinished, setKommiuniti);
   }, []);
@@ -182,6 +185,28 @@ export default function Home() {
               <span className="text-secondary">&lt;/</span>
               <span className="text-primary">
                 <GithubLogo className="inline" />
+              </span>
+              <span className="text-secondary">&gt;</span>
+            </p>
+            <p>
+              &nbsp;&nbsp;
+              <span className="text-secondary">&lt;</span>
+              <span className="text-primary p-1">
+                <Image className="inline" width={18} height={18} src={"/images/pixelfed.svg"} alt="pixelfed" />
+              </span>
+              <span className="text-secondary">&gt;</span>
+              <a
+                className="hover:cursor-pointer hover:underline"
+                href="https://pixelfed.social/i/web/profile/677938259497057424"
+                onMouseEnter={() =>
+                  randomTextAnimation(pixelfedNameFinished, setPixelfedName)
+                }
+              >
+                {pixelfedName}
+              </a>
+              <span className="text-secondary">&lt;/</span>
+              <span className="text-primary">
+              <Image className="inline" width={18} height={18} src={"/images/pixelfed.svg"} alt="pixelfed" />
               </span>
               <span className="text-secondary">&gt;</span>
             </p>
