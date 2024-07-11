@@ -51,8 +51,8 @@ export default function Home() {
     randomTextAnimation(residenceFinished, setResidence);
     randomTextAnimation(instagramNameFinished, setInstagramName);
     randomTextAnimation(githubNameFinished, setGithubName);
-    randomTextAnimation(pixelfedNameFinished, setPixelfedName)
-    randomTextAnimation(mastodonNameFinished, setMastodonName)
+    randomTextAnimation(pixelfedNameFinished, setPixelfedName);
+    randomTextAnimation(mastodonNameFinished, setMastodonName);
     randomTextAnimation(pixelixFinished, setPixelix);
     randomTextAnimation(kommiunitiFinished, setKommiuniti);
   }, []);
@@ -98,7 +98,10 @@ export default function Home() {
     <>
       <Head>
         <title>Emanuel Hiebeler</title>
-        <meta name="description" content="Portfolio for Emanuel Hiebeler, a Programmer from Austria" />
+        <meta
+          name="description"
+          content="Portfolio for Emanuel Hiebeler, a Programmer from Austria"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -194,8 +197,12 @@ export default function Home() {
             <p>
               &nbsp;&nbsp;
               <span className="text-secondary">&lt;</span>
-              <span className="text-primary p-1">
-                <Image className="inline" width={18} height={18} src={"/images/pixelfed.svg"} alt="pixelfed" />
+              <span className="text-primary">
+                <img
+                  src={"/images/pixelfed.svg"}
+                  alt="pixelfed"
+                  className="inline md:h-7 sm:h-4 h-3"
+                />
               </span>
               <span className="text-secondary">&gt;</span>
               <a
@@ -209,15 +216,23 @@ export default function Home() {
               </a>
               <span className="text-secondary">&lt;/</span>
               <span className="text-primary">
-              <Image className="inline" width={18} height={18} src={"/images/pixelfed.svg"} alt="pixelfed" />
+                <img
+                  src={"/images/pixelfed.svg"}
+                  alt="pixelfed"
+                  className="inline md:h-7 sm:h-4 h-3"
+                />
               </span>
               <span className="text-secondary">&gt;</span>
             </p>
             <p>
               &nbsp;&nbsp;
               <span className="text-secondary">&lt;</span>
-              <span className="text-primary p-1">
-                <Image className="inline" width={18} height={18} src={"/images/mastodon.svg"} alt="pixelfed" />
+              <span className="text-primary">
+                <img
+                  src={"/images/mastodon.svg"}
+                  alt="pixelfed"
+                  className="inline md:h-7 sm:h-4 h-3"
+                />
               </span>
               <span className="text-secondary">&gt;</span>
               <a
@@ -231,7 +246,11 @@ export default function Home() {
               </a>
               <span className="text-secondary">&lt;/</span>
               <span className="text-primary">
-              <Image className="inline" width={18} height={18} src={"/images/mastodon.svg"} alt="pixelfed" />
+                <img
+                  src={"/images/mastodon.svg"}
+                  alt="pixelfed"
+                  className="inline md:h-7 sm:h-4 h-3"
+                />
               </span>
               <span className="text-secondary">&gt;</span>
             </p>
@@ -305,13 +324,24 @@ export default function Home() {
             description="Pixelix is a user-friendly Android client for Pixelfed, a fediverse platform dedicated to photo sharing. With Pixelix, users can effortlessly access their Pixelfed accounts, upload photos, and browse posts, providing a seamless and enjoyable experience."
             logoPath={"/images/pixelix_logo.webp"}
             programmingLanguages={[
-              {link: "https://www.android.com/", imagePath: "/images/android.svg"},
-              {link: "https://developer.android.com/develop/ui/compose", imagePath: "/images/jetpack_compose_logo.png"},
-              {link: "https://kotlinlang.org/", imagePath: "/images/kotlin.svg"},
+              {
+                link: "https://www.android.com/",
+                imagePath: "/images/android.svg",
+              },
+              {
+                link: "https://developer.android.com/develop/ui/compose",
+                imagePath: "/images/jetpack_compose_logo.png",
+              },
+              {
+                link: "https://kotlinlang.org/",
+                imagePath: "/images/kotlin.svg",
+              },
             ]}
             website="https://pixelix.vercel.app"
             github={["https://github.com/daniebeler/pixelix"]}
-            playStore={"https://play.google.com/store/apps/details?id=com.daniebeler.pfpixelix"}
+            playStore={
+              "https://play.google.com/store/apps/details?id=com.daniebeler.pfpixelix"
+            }
             closePopup={() => {
               setPixelixPopupOpen(false);
             }}
@@ -323,12 +353,18 @@ export default function Home() {
             description="Kommiuniti is a web app designed to streamline community management. You can assign and manage tasks such as cooking and cleaning, ensuring everyone knows their responsibilities. The app features a collective shopping list that keeps all community members informed about needed items. Additionally, Kommiuniti includes a debt manager to easily track and manage communal finances."
             logoPath={"/images/kommiuniti_logo.svg"}
             programmingLanguages={[
-              {link: "https://nodejs.org", imagePath: "/images/nodeJs.svg"},
-              {link: "https://mariadb.org/", imagePath: "/images/mariaDb.svg"},
-              {link: "https://angular.io/", imagePath: "/images/angular.svg"},
+              { link: "https://nodejs.org", imagePath: "/images/nodeJs.svg" },
+              {
+                link: "https://mariadb.org/",
+                imagePath: "/images/mariaDb.svg",
+              },
+              { link: "https://angular.io/", imagePath: "/images/angular.svg" },
             ]}
             website="https://kommiuniti.netlify.app/"
-            github={["https://github.com/Hiebeler/Community-Frontend", "https://github.com/Hiebeler/Community-Backend"]}
+            github={[
+              "https://github.com/Hiebeler/Community-Frontend",
+              "https://github.com/Hiebeler/Community-Backend",
+            ]}
             playStore={null}
             closePopup={() => {
               setKommiunitiPopupOpen(false);

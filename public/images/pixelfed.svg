@@ -2,9 +2,9 @@
 <svg
    id="svg12"
    version="1.1"
-   viewBox="0 0 21.014206 24.932718"
-   height="24.932718"
-   width="21.014206"
+   viewBox="0 0 29.160593 29.160594"
+   height="29.160595"
+   width="29.160593"
    sodipodi:docname="pixelfed.svg"
    inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -23,9 +23,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="4.2866667"
-     inkscape:cx="0.93312597"
-     inkscape:cy="38.608087"
+     inkscape:zoom="17.146667"
+     inkscape:cx="9.681182"
+     inkscape:cy="12.684681"
      inkscape:window-width="1536"
      inkscape:window-height="891"
      inkscape:window-x="0"
@@ -54,10 +54,26 @@
   <g
      style="fill:#ed3f5a;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1"
      id="Page-1"
-     transform="translate(-15.43972,-14.197773)">
+     transform="translate(-11.366527,-12.083835)">
     <path
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ed3f5a;stroke-width:2.059;stroke-dasharray:none;stroke-opacity:1"
        d="m 16.46922,36.720778 6.546096,-6.262763 h 4.586148 c 0,0 7.881397,-0.350418 7.822658,-7.615371 -0.05874,-7.264953 -7.822658,-7.615371 -7.822658,-7.615371 h -6.619172 c 0,0 -4.513072,0.260533 -4.513072,4.393483 0,4.13295 0,17.100022 0,17.100022 z"
        id="path3" />
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.32145;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3"
+       width="31"
+       height="31"
+       x="10.480248"
+       y="9.8169489"
+       rx="0"
+       ry="0" />
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.839;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4"
+       width="29.160593"
+       height="29.160595"
+       x="11.366527"
+       y="12.083835" />
   </g>
 </svg>
