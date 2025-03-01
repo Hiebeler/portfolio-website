@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Typewriter from "typewriter-effect";
 import {
-  EnvelopeSimple,
   GithubLogo,
   InstagramLogo,
 } from "@phosphor-icons/react";
@@ -22,9 +21,11 @@ export default function Home() {
   const githubNameFinished = "Hiebeler";
   const [githubName, setGithubName] = useState<string>(githubNameFinished);
   const pixelfedNameFinished = "@hiebeler05";
-  const [pixelfedName, setPixelfedName] = useState<string>(githubNameFinished);
+  const [pixelfedName, setPixelfedName] = useState<string>(pixelfedNameFinished);
   const mastodonNameFinished = "@Hiebeler05";
-  const [mastodonName, setMastodonName] = useState<string>(githubNameFinished);
+  const [mastodonName, setMastodonName] = useState<string>(mastodonNameFinished);
+  const socialfolioFinished = "hiebeler05";
+  const [socialfolio, setSocialfolio] = useState<string>();
   const nameFinished = "Emanuel Hiebeler";
   const [name, setName] = useState<string>(nameFinished);
   let AgeFinished = "";
@@ -53,6 +54,7 @@ export default function Home() {
     randomTextAnimation(githubNameFinished, setGithubName);
     randomTextAnimation(pixelfedNameFinished, setPixelfedName);
     randomTextAnimation(mastodonNameFinished, setMastodonName);
+    randomTextAnimation(socialfolioFinished, setSocialfolio);
     randomTextAnimation(pixelixFinished, setPixelix);
     randomTextAnimation(kommiunitiFinished, setKommiuniti);
   }, []);
@@ -254,6 +256,37 @@ export default function Home() {
               </span>
               <span className="text-secondary">&gt;</span>
             </p>
+            <p>
+              &nbsp;&nbsp;
+              <span className="text-secondary">&lt;</span>
+              <span className="text-primary">
+                <img
+                  src={"/images/socialfolio.svg"}
+                  alt="socialfolio"
+                  className="inline md:h-7 sm:h-4 h-3"
+                />
+              </span>
+              <span className="text-secondary">&gt;</span>
+              <a
+                className="hover:cursor-pointer hover:underline"
+                href="https://socialfolio.me/hiebeler05"
+                onMouseEnter={() =>
+                  randomTextAnimation(socialfolioFinished, setSocialfolio)
+                }
+              >
+                {socialfolio}
+              </a>
+              <span className="text-secondary">&lt;/</span>
+              <span className="text-primary">
+                <img
+                  src={"/images/socialfolio.svg"}
+                  alt="socialfolio"
+                  className="inline md:h-7 sm:h-4 h-3"
+                />
+              </span>
+              <span className="text-secondary">&gt;</span>
+            </p>
+         
             <p>
               <span className="text-secondary">&lt;/</span>
               <span className="text-primary">social</span>
