@@ -106,6 +106,7 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="me" href="https://techhub.social/@Hiebeler05" />
       </Head>
       <main className="bg-background h-screen flex flex-wrap-reverse flex-row max-w-screen text-[#fff]">
         <div className="basis-full xl:basis-3/5 flex justify-center sm:items-center">
